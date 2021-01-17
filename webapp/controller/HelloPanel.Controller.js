@@ -14,6 +14,10 @@ sap.ui.define([
 
 			// show message
 			MessageToast.show(sMsg);
+		},
+
+		onOpenDialog : function () {
+			this.getOwnerComponent().openHelloDialog();
 		}
 	});
 

@@ -4,6 +4,10 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("volkova_ev.controller.App", {
+
+		onOpenDialog : function () {
+			this.getOwnerComponent().openHelloDialog();
+		}
 	});
 
 });

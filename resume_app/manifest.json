@@ -1,0 +1,41 @@
+{
+  "_version": "1.12.0",
+  "sap.app": {
+	"id": "kamilov_em",
+	"type": "application",
+	"title": "РЕЗЮМЕ",
+	"description": "Резюме Камилов Э.М. для практического занятия №10",
+	"applicationVersion": {
+	  "version": "1.0.0"
+	}
+  },
+  "sap.ui": {
+	"technology": "UI5",
+	"deviceTypes": {
+		"desktop": true,
+		"tablet": true,
+		"phone": true
+	}
+  },
+  "sap.ui5": {
+	"rootView": {
+		"viewName": "kamilov_em.view.Resume",
+		"type": "XML",
+		"async": true,
+		"id": "app"
+	},
+	"dependencies": {
+	  "minUI5Version": "1.60",
+	  "libs": {
+		"sap.m": {}
+	  }
+	},
+	"resources": {
+	  "css": [
+		{
+		  "uri": "css/style.css"
+		}
+	  ]
+	}
+  }
+}

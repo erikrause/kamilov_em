@@ -1,0 +1,101 @@
+[{
+	"ShipperName": "ShipperName 1",
+	"ProductName": "ProductName 1",
+	"Quantity": 7731,
+	"ExtendedPrice": 3537.7,
+	"Status": "Status 1",
+	"__metadata": {
+		"uri": "Invoices(ProductName='ProductName%201',Quantity=7731,ShipperName='ShipperName%201')",
+		"type": "NorthwindModel.Invoice"
+	}
+}, {
+	"ShipperName": "ShipperName 2",
+	"ProductName": "ProductName 2",
+	"Quantity": 7915,
+	"ExtendedPrice": 7955.16,
+	"Status": "Status 2",
+	"__metadata": {
+		"uri": "Invoices(ProductName='ProductName%202',Quantity=7915,ShipperName='ShipperName%202')",
+		"type": "NorthwindModel.Invoice"
+	}
+}, {
+	"ShipperName": "ShipperName 3",
+	"ProductName": "ProductName 3",
+	"Quantity": 702,
+	"ExtendedPrice": 8364.3,
+	"Status": "Status 3",
+	"__metadata": {
+		"uri": "Invoices(ProductName='ProductName%203',Quantity=702,ShipperName='ShipperName%203')",
+		"type": "NorthwindModel.Invoice"
+	}
+}, {
+	"ShipperName": "ShipperName 4",
+	"ProductName": "ProductName 4",
+	"Quantity": 3159,
+	"ExtendedPrice": 7792.28,
+	"Status": "Status 4",
+	"__metadata": {
+		"uri": "Invoices(ProductName='ProductName%204',Quantity=3159,ShipperName='ShipperName%204')",
+		"type": "NorthwindModel.Invoice"
+	}
+}, {
+	"ShipperName": "ShipperName 5",
+	"ProductName": "ProductName 5",
+	"Quantity": 281,
+	"ExtendedPrice": 4348.91,
+	"Status": "Status 5",
+	"__metadata": {
+		"uri": "Invoices(ProductName='ProductName%205',Quantity=281,ShipperName='ShipperName%205')",
+		"type": "NorthwindModel.Invoice"
+	}
+}, {
+	"ShipperName": "ShipperName 6",
+	"ProductName": "ProductName 6",
+	"Quantity": 5144,
+	"ExtendedPrice": 9053.99,
+	"Status": "Status 6",
+	"__metadata": {
+		"uri": "Invoices(ProductName='ProductName%206',Quantity=5144,ShipperName='ShipperName%206')",
+		"type": "NorthwindModel.Invoice"
+	}
+}, {
+	"ShipperName": "ShipperName 7",
+	"ProductName": "ProductName 7",
+	"Quantity": 6637,
+	"ExtendedPrice": 8326.71,
+	"Status": "Status 7",
+	"__metadata": {
+		"uri": "Invoices(ProductName='ProductName%207',Quantity=6637,ShipperName='ShipperName%207')",
+		"type": "NorthwindModel.Invoice"
+	}
+}, {
+	"ShipperName": "ShipperName 8",
+	"ProductName": "ProductName 8",
+	"Quantity": 2209,
+	"ExtendedPrice": 9817.37,
+	"Status": "Status 8",
+	"__metadata": {
+		"uri": "Invoices(ProductName='ProductName%208',Quantity=2209,ShipperName='ShipperName%208')",
+		"type": "NorthwindModel.Invoice"
+	}
+}, {
+	"ShipperName": "ShipperName 9",
+	"ProductName": "ProductName 9",
+	"Quantity": 9963,
+	"ExtendedPrice": 1556.78,
+	"Status": "Status 9",
+	"__metadata": {
+		"uri": "Invoices(ProductName='ProductName%209',Quantity=9963,ShipperName='ShipperName%209')",
+		"type": "NorthwindModel.Invoice"
+	}
+}, {
+	"ShipperName": "ShipperName 10",
+	"ProductName": "ProductName 10",
+	"Quantity": 5801,
+	"ExtendedPrice": 4726.51,
+	"Status": "Status 10",
+	"__metadata": {
+		"uri": "Invoices(ProductName='ProductName%2010',Quantity=5801,ShipperName='ShipperName%2010')",
+		"type": "NorthwindModel.Invoice"
+	}
+}]

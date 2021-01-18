@@ -3,6 +3,8 @@
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core"
+	xmlns:html="http://www.w3.org/1999/xhtml"
 	displayBlock="true">
 	<Shell>
 		<App>
@@ -10,17 +12,50 @@
 				<Page title="Резюме">
 					<Panel>
 						<content>
-							<l:VerticalLayout id="containerLayout" width="75%">
+							<!--l:VerticalLayout id="containerLayout" width="100%">
 								<l:BlockLayout id="BlockLayout">
 									<l:BlockLayoutRow>
-										<l:BlockLayoutCell title="75% width cell" width="3">
+										
+										<l:BlockLayoutCell title="75% width cell" width="15%">
 											<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr." />
 										</l:BlockLayoutCell>
-										<l:BlockLayoutCell title="25% width cell">
-												<Image src="images/photo.jpg" width="100%"/>
+										<l:BlockLayoutCell title="25% width cell" width="10%">
+												<Image src="images/photo.jpg" 
+												width="50%" 
+												press="onPhotoPress"/>
+
 										</l:BlockLayoutCell>
 									</l:BlockLayoutRow>
 								</l:BlockLayout>
+							</l:VerticalLayout-->
+							<l:VerticalLayout
+								width="100%"
+								class="gridWrapper">
+								<l:Grid
+										containerQuery="true"
+										position="Center"
+										width="65%"
+										hSpacing="10">
+									<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+									>
+										<layoutData>
+											<l:GridData span="S12"/>
+										</layoutData>
+									</Text>
+									<Image src="images/photo.jpg" width="75%" press="onPhotoPress"> 
+										<layoutData>
+											<l:GridData span="M3 S10" indent="XL1 L1 M1 S1" />
+										</layoutData>
+									</Image>
+									<Text 
+									text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.">
+										<layoutData>
+											<l:GridData
+													linebreak="true"/>
+										</layoutData>
+									</Text>
+								</l:Grid>
+							
 							</l:VerticalLayout>
 						</content>
 					</Panel>

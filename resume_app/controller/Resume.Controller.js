@@ -25,7 +25,11 @@ sap.ui.define([
 		}*/
 		onPhotoPress : function () {
 			MessageToast.show("Да, это я!");
-		} 
+		},
+		
+		onGitHubBtnPress : function () {
+			window.location.replace("https://github.com/erikrause/kamilov_em");
+		}
 	});
 
 });

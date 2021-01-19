@@ -38,6 +38,7 @@
     						justifyContent="Center">
 								<Text text="Камилов Эркин Махмуджанович" class="h2" />
 								<Text text="Резюме для задания №10" class="description"/>
+								<Button icon="images/GitHub_Logo.png" type="Transparent" press="onGitHubBtnPress" ariaLabelledBy="actionButtonLabel"/>
 							</VBox>
 							<!--Text text="Камилов Эркин Махмуджанович" class="h2"
 							/>

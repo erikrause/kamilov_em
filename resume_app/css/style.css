@@ -39,3 +39,9 @@
 .myPhoto {
     padding-block: 2rem;
 }
+
+.sapMBtnInner .sapMBtnIcon.sapMImg {
+    height: 4rem;
+    max-width: 10rem;
+    width: auto;
+}

@@ -5,57 +5,126 @@
 	xmlns:l="sap.ui.layout"
 	xmlns:core="sap.ui.core"
 	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:grid="sap.ui.layout.cssgrid"
 	displayBlock="true">
 	<Shell>
 		<App>
 			<pages>
 				<Page title="Резюме">
-					<Panel>
-						<content>
-							<!--l:VerticalLayout id="containerLayout" width="100%">
-								<l:BlockLayout id="BlockLayout">
-									<l:BlockLayoutRow>
-										
-										<l:BlockLayoutCell title="75% width cell" width="15%">
-											<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr." />
-										</l:BlockLayoutCell>
-										<l:BlockLayoutCell title="25% width cell" width="10%">
-												<Image src="images/photo.jpg" 
-												width="50%" 
-												press="onPhotoPress"/>
+					<!--l:VerticalLayout id="containerLayout" width="100%">
+						<l:BlockLayout id="BlockLayout">
+							<l:BlockLayoutRow>
+								
+								<l:BlockLayoutCell title="75% width cell" width="15%">
+									<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr." />
+								</l:BlockLayoutCell>
+								<l:BlockLayoutCell title="25% width cell" width="10%">
+										<Image src="images/photo.jpg" 
+										width="50%" 
+										press="onPhotoPress"/>
 
-										</l:BlockLayoutCell>
-									</l:BlockLayoutRow>
-								</l:BlockLayout>
-							</l:VerticalLayout-->
-							<l:VerticalLayout
-								width="100%"
-								class="gridWrapper">
-								<l:Grid
-										containerQuery="true"
-										position="Center"
-										width="65%"
-										hSpacing="10">
-									<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
-									>
-										<layoutData>
-											<l:GridData span="S12"/>
-										</layoutData>
-									</Text>
-									<Image src="images/photo.jpg" width="75%" press="onPhotoPress"> 
-										<layoutData>
-											<l:GridData span="M3 S10" indent="XL1 L1 M1 S1" />
-										</layoutData>
-									</Image>
-									<Text 
-									text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.">
-										<layoutData>
-											<l:GridData
-													linebreak="true"/>
-										</layoutData>
-									</Text>
-								</l:Grid>
+								</l:BlockLayoutCell>
+							</l:BlockLayoutRow>
+						</l:BlockLayout>
+					</l:VerticalLayout-->
+					<l:VerticalLayout
+						width="100%"
+						class="gridWrapper">
+						<l:Grid
+						containerQuery="true"
+						position="Center"
+						width="60%">
+							<VBox class="demoBox" alignItems="Center"
+    						justifyContent="Center">
+								<Text text="Камилов Эркин Махмуджанович" class="h2" />
+								<Text text="Резюме для задания №10" class="description"/>
+							</VBox>
+							<!--Text text="Камилов Эркин Махмуджанович" class="h2"
+							/>
+							<Text text="Резюме для задания №10" class="description"/-->
+								<!--layoutData>
+									<l:GridData span="S12"/>
+								</layoutData-->
 							
+							<Image src="images/photo.jpg" width="75%" press="onPhotoPress" class="myPhoto"> 
+								<layoutData>
+									<l:GridData span="M3 S10" indent="XL1 L1 M1 S1" />
+								</layoutData>
+							</Image>
+							<!--Text 
+							text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.">
+								<layoutData>
+									<l:GridData
+											linebreak="true"/>
+								</layoutData>
+							</Text-->
+						</l:Grid>
+					<Panel headerText="Общая информация" expandable="false">
+						<l:Grid
+						containerQuery="true"
+						position="Center"
+						width="80%">
+							<VBox class="universityBox" width="100%" alignItems="Left"
+							justifyContent="Left">
+								<Text text="Дата рождения: 23.10.1997 (полных лет 23)" class="bulletlist"/>
+								<Text text="Пол: мужской" class="bulletlist"/>
+								<Text text="Семейное положение: холост" class="bulletlist"/> 
+								<Text text="Адрес проживания: Сургутский район, с.п. Солнечный, ул. Сибирская 2А, кв. 6" class="bulletlist"/> 
+							</VBox>
+						</l:Grid>
+					</Panel>
+							</l:VerticalLayout>
+					<Panel headerText="Высшее образование" expandable="false">
+						<content>
+							<l:VerticalLayout
+							width="100%"
+							class="gridWrapper">
+								<l:Grid
+								containerQuery="true"
+								position="Center"
+								width="80%">
+									<VBox class="universityBox" alignItems="Center"
+	        						justifyContent="Center">
+										<Text text="Сургутский государственный университет" class="h4"/>
+										<Text text="2015-2020" class="description"/>
+										<layoutData>
+											<l:GridData span="M4 S2" />
+										</layoutData>
+									</VBox>
+									<VBox>
+									<Text text="Специальность: 09.03.02 Информационные системы и технологии" class="bulletlist"/>
+									<Text text="Ступень: бакалавр" class="bulletlist"/>
+									<Text text="Форма обучения: очная" class="bulletlist"/> 
+									<Text text="Тема выпускной работы: Информационная система анализа горной породы" class="bulletlist"/> 
+										<layoutData>
+											<l:GridData span="M7 S12" indent="L1 M1" />
+										</layoutData>
+									</VBox>
+								</l:Grid>
+							</l:VerticalLayout>
+						</content>
+					</Panel>
+					<Panel headerText="Дополнительная информация" expandable="true">
+						<!--headerToolbar>
+							<OverflowToolbar height="5rem">
+								<Text text="Дополнительная информация" class="h2"/>
+							</OverflowToolbar>
+						</headerToolbar-->
+						<content>
+							<l:VerticalLayout
+							width="100%"
+							class="gridWrapper">
+								<l:Grid
+								containerQuery="true"
+								position="Center"
+								width="80%">
+									<VBox>
+									<html:iframe src="info.html" height="200px" width="100%" class="info"/>
+										<layoutData>
+											<l:GridData span="M10 S12" indent="L1 M1" />
+										</layoutData>	
+									</VBox>
+								</l:Grid>
 							</l:VerticalLayout>
 						</content>
 					</Panel>

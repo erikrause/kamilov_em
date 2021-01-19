@@ -1,0 +1,41 @@
+.sapMText {
+    font-size: 1em;
+}
+
+.h2 {
+	font-size: 2em;
+	text-align: center !important;
+}
+
+.h4 {
+	font-size: 1.3em;
+	text-align: center !important;
+	font-weight: bold
+}
+
+
+.description {
+	font-size: 1.2em;
+	text-align: center !important;
+}
+
+.sapMPanel .sapMPanelHdr {
+	font-size: 2em;
+	text-align: center !important;
+	
+}
+
+.bulletlist {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 20px;
+}
+
+.sapMVBox {
+    padding-block: 2rem;
+}
+
+.myPhoto {
+    padding-block: 2rem;
+}
